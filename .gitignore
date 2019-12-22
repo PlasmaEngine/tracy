@@ -28,3 +28,4 @@ vcpkg/*
 !vcpkg/install_vcpkg_dependencies.bat
 .deps/
 .dirstamp
+build/
