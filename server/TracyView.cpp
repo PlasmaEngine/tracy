@@ -2522,7 +2522,7 @@ void View::DrawZones()
                         {
                             TextFocused( "Message at", TimeToString( (*msgit)->time ) );
                             ImGui::PushStyleColor( ImGuiCol_Text, (*msgit)->color );
-                            ImGui::TextUnformatted( m_worker.GetString( (*msgit)->ref ) );
+                            ImGui::TextUnformatted(messageText);
                             ImGui::PopStyleColor();
                         }
                         ImGui::EndTooltip();
