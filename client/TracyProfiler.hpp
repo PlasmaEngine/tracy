@@ -39,6 +39,18 @@
 #  define TracyConcatIndirect(x,y) x##y
 #endif
 
+#ifndef TRACY_SOURCE_LOCATION_FILE
+#  define TRACY_SOURCE_LOCATION_FILE __FILE__
+#endif
+
+#ifndef TRACY_SOURCE_LOCATION_LINE
+#  define TRACY_SOURCE_LOCATION_LINE __LINE__
+#endif
+
+#ifndef TRACY_SOURCE_LOCATION_FUNCTION
+#  define TRACY_SOURCE_LOCATION_FUNCTION __FUNCTION__
+#endif
+
 namespace tracy
 {
 
